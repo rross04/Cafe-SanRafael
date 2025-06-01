@@ -1,58 +1,84 @@
-/* Estilos generales */
+/* Estilo general */
 body {
-    font-family:'Times New Roman', Times, serif;
-    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-image: url('imgs/background.png');
-    text-align: center;
-}
-
-/* Diseño del header */
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 0 10%;
     background-size: cover;
     background-position: center;
-}
-
-/* Contenedor de la imagen */
-.logo-container {
-    margin-bottom: 20px;
-
-}
-/* Imagen */
-.logo {
-    width: 250px;
-    height: auto;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar {
+    background-color: transparent !important;
+  }
+  
+  .nav-link {
+    margin-right: 15px;
+  }
+  
+  .carousel-item img {
+    height: 90vh;
     object-fit: cover;
-}
+  }
+  .navbar .navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  hr{
+    height: 1px;
+    width: 100px;
+  }
 
-
-/* Botón CTA */
-.cta-button {
+  /* Carrusel */
+  .hero {
+    position: relative;
+    height: 70vh;
+    margin-top: 15px;
+    overflow: hidden;
+  }
+  
+  .carousel-inner img {
+    object-fit: cover;
+    height: 100vh;
+  }
+  
+  /* Ocultar flechas del carrusel */
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none !important;
+  }
+  
+  /* Botón centrado sobre el carrusel */
+  .carousel-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .cta-button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 10px 23px;
+    font-size: 15px;
     color: white;
     background-color: #c50b0b;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 30px;
     transition: background 0.3s ease-in-out;
-}
-
-.cta-button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-    margin-top: 50px;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
+  }
+  
+  .cta-button:hover {
+    background-color: #e19a01;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #231a16;
+  }
+  
+  

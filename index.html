@@ -1,47 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Rafael</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café San Rafael</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="styles.css" />
 
-    <!-- Estilos CSS -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-
-    <header class="hero">
-        <!-- Imagen del logo o perfil arriba -->
-        <div class="logo-container" data-aos="fade-down" data-aos-duration="1000">
-            <img src="imgs/caferafael.png" alt="Cafe Rafael Costa Rica" class="logo">
-            
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="imgs/FlorSR.png" alt="Logo" width="40" height="40" class="me-2" />
+            <span class="fw-bold text-white">Café San Rafael</span>
+          </a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-end">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Ubicación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
 
-        <!-- Texto abajo, centrado -->
-        <div class="intro" data-aos="fade-up" data-aos-duration="1200">
-            <p>El café de secado en cereza es un producto excepcional, elaborado con granos seleccionados directamente de la cereza madura. Su proceso comienza con la recolección manual, asegurando la mejor calidad desde el origen. Luego, las cerezas se secan al sol de manera cuidadosa, preservando sus sabores naturales y aromas intensos. El resultado es un café con un perfil limpio, acidez brillante, cuerpo suave y notas frutales que brindan una experiencia auténtica y deliciosa en cada taza. </p>
-            <h3>Ideal para los amantes de un café con carácter y sabor único</h3>
-            <a href="inicio.html" class="cta-button" data-aos="zoom-in" data-aos-duration="1000">Info</a>
+  <!-- Carrusel de imágenes
+  <header class="hero" id="inicio">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imgs/cafetal2.jpg" class="d-block w-100" alt="Café 1" />
         </div>
-    </header>
+        <div class="carousel-item">
+          <img src="imgs/cafetal.jpg" class="d-block w-100" alt="Café 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/tazacafe.jpg" class="d-block w-100" alt="Café 3" />
+        </div>
+      </div>
+    </div>
 
-    <main data-aos="fade-up" data-aos-duration="1200">
-        <h2>Acerca de</h2>
-        <p data-aos="fade-up" data-aos-delay="200">Bla bla blablablablab</p>
-    </main>
+  </header>
+  -->
+  <!-- Información sobre el café -->
+  <main data-aos="fade-up" data-aos-duration="1200" id="sobre" class="container my-5 text-white">
+    <h3>Cultivado con amor en las montañas de Naranjo, Costa Rica.</h3>
+    <hr>
+    <p>
+      El Café San Rafael proviene de las montañas de San Rafael de Naranjo, en Alajuela. Se recolecta con cariño escogiendo los mejores granos, se extiende al sol durante varias semanas donde los azúcares de la fruta del café se imprecnan en el grano que posteriormente se pela y pasa a manos de los maestros tostadores de la zona para alcanzar un tueste medio, que magnífica el aroma y resalta los sabores frutales.
+    </p>
+    <p>Ideal para los amantes de un café con carácter y sabor único</p>
+  
+    
+</main>
 
-    <footer data-aos="fade-up" data-aos-duration="1200">
-        <p>&copy; 2025 Rosana - Todos los derechos reservados.</p>
-    </footer>
+<!-- Botón CTA sobre el carrusel -->
+<div class="text-center my-4" data-aos="zoom-in" data-aos-duration="1000">
+    <a href="inicio.html" class="cta-button">Más información</a>
+  </div>
 
-    <!-- AOS JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+  <!-- Footer -->
+  <footer class="text-center text-white py-3">
+    <p>&copy; 2025 Rosana</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init();</script>
 
 </body>
 </html>
